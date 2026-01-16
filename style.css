@@ -226,8 +226,41 @@ section {
     position: sticky;
     top: 44px;
     background-color: var(--bg);
-    padding: 2px 0px;
+    padding: 12px 0px;
     z-index: 100;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--accent);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#merchNav .nav-link {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--glass);
+}
+
+#merchNav .nav-link:hover,
+#merchNav .nav-link:focus {
+    border-color: var(--accent);
+    background: rgba(219, 13, 68, 0.15);
+}
+
+#longSleeve,
+#hoodies,
+#jersey,
+#tshirts {
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#longSleeve {
+    border-top: none;
+    margin-top: 0;
+}
+
+#merch {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 6rem;
 }
 .services img{
     height: 125px;
@@ -369,6 +402,26 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 95vw;
+  }
+
+  /* Make merch nav more compact on mobile */
+  #merchNav {
+    gap: 8px;
+    padding: 10px 4px;
+    top: 60px;
+  }
+
+  #merchNav .nav-link {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  #longSleeve,
+  #hoodies,
+  #jersey,
+  #tshirts {
+    padding-top: 30px;
+    margin-top: 30px;
   }
 }
 
