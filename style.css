@@ -77,11 +77,10 @@ header {
   height: auto
 }
 .hero-logo {
-  width: 700px;
-  max-width: 80vw;
+  width: 900px;
+  max-width: 85vw;
   overflow: hidden;
-    margin-top: -50px;
-  margin: -50px auto -100px auto;
+  margin: 0 auto 2rem auto;
 }
 nav {
   display: flex;
@@ -157,6 +156,7 @@ h1 {
 p.lead {
   color: var(--muted);
   font-size: clamp(1rem, 2.2vw, 1.25rem);
+  margin: 1rem 0;
 }
 .cta {
   margin-top: 1.25rem;
@@ -357,16 +357,32 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
   }
   .content{
     position: relative;
     width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .content .hero-logo{
-      max-width: 70vw;
-      margin-bottom: -50px;
+      max-width: 85vw;
+      margin-bottom: 1.5rem;
+  }
 
+  .hero .content {
+    padding: 2rem 0;
+    margin: 0;
+  }
+
+  .cta {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .hero .container {
+    padding: 0;
   }
   /* Stack service/product grids on small screens */
   .services-grid{
@@ -396,12 +412,6 @@ footer {
     width: 300px;
     height: auto;
     margin: 10px;
-  }
-  /* Center large hero logo and reduce overlap on small screens */
-  .hero-logo {
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 95vw;
   }
 
   /* Make merch nav more compact on mobile */
