@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Remix Contest Rules - CHAOS ERA</title>
+  <meta name="description" content="Official remix contest rules for CHAOS ERA">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden><img src="../assets/3bp.png" alt=""></div>
+      <div>
+        <div style="font-weight:700">CHAOS ERA</div>
+        <div style="font-size:12px;color:var(--muted)">Metalcore</div>
+      </div>
+    </div>
+
+    <nav aria-label="Main Navigation">
+      <a class="nav-link" href="../index.html#home">Home</a>
+      <a class="nav-link" href="../index.html#music">Music</a>
+      <a class="nav-link" href="../index.html#merch">Merch</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </header>
+
+  <div id="mobileMenu" role="dialog" aria-modal="false" style="display:none;position:fixed;right:1rem;top:102px;background:rgba(0,0,0,0.8);padding:1rem;border-radius:8px;z-index:80">
+    <a class="nav-link" href="../index.html#home">Home</a>
+    <a class="nav-link" href="../index.html#music">Music</a>
+    <a class="nav-link" href="../index.html#merch">Merch</a>
+  </div>
+
+  <main id="main" style="padding-top: 80px;">
+    <section class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem;">REMIX CONTEST</h1>
+        <p class="lead" style="max-width: 700px; margin: 0 auto;">Official Rules & Guidelines</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; border-left: 4px solid var(--accent);">
+          <h2 style="margin-top: 0; color: var(--accent);">Contest Overview</h2>
+          <p style="color: var(--muted); line-height: 1.6;">
+            CHAOS ERA is calling all producers and musicians to reimagine our track CONCRETE. Submit your best remix for a chance to featured on our official channels and album, and have your work heard by thousands of modern metal fans worldwide.
+          </p>
+        </div>
+
+        <!-- Live Play Counter -->
+        <div style="margin-bottom: 2rem; padding: 1.5rem; text-align: center;">
+          <div style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">CONCRETE - Total Plays</div>
+          <div id="playCounter" style="color: var(--accent); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">0</div>
+        </div>
+
+        <!-- Download Stems Section -->
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+          <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center;">
+            <div style="flex: 1; min-width: 250px; max-width: 350px;">
+              <img src="../assets/concrete-artwork.png" alt="Concrete Artwork" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+            </div>
+            <div style="flex: 1; min-width: 250px; text-align: center;">
+              <h3 style="color: #fff; margin-bottom: 1rem; font-size: 1.5rem;">Get the Official Stems</h3>
+              <p style="color: var(--muted); margin-bottom: 1.5rem; line-height: 1.6;">Download the isolated tracks to create your remix</p>
+              <a href="https://drive.google.com/uc?export=download&id=1lI1bdMZ9rK0J3dE2ZmC3p15Uj6hQRPvZ" class="btn" style="font-size: 1.1rem; padding: 1rem 2rem; display: inline-block; text-decoration: none;">DOWNLOAD STEMS</a>
+              <p style="color: var(--muted); margin-top: 1rem; font-size: 0.85rem;">ZIP file • Approx. 335 MB</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+          <h2 style="color: #fff;">Eligibility</h2>
+          <ul style="color: var(--muted); line-height: 1.8;">
+            <li>Contest is open to participants worldwide</li>
+            <li>You must be 13 years or older to enter</li>
+            <li>Participants under 18 require parental/guardian consent</li>
+            <li>All submissions must be original work created by the entrant</li>
+            <li>One submission per person</li>
+          </ul>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+          <h2 style="color: #fff;">Submission Guidelines</h2>
+          <ul style="color: var(--muted); line-height: 1.8;">
+            <li><strong>Format:</strong> WAV </li>
+            <li><strong>Length:</strong> 2-6 minutes</li>
+            <li><strong>Stems:</strong> Download official stems from the link provided</li>
+            <li><strong>Creative Freedom:</strong> Any genre, any style - get creative!</li>
+            <li><strong>Submission Method:</strong> Upload via the official submission portal</li>
+            <li><strong>File Naming:</strong> YourName_TrackTitle_Remix.wav</li>
+            <li><strong>Additional Requirement:</strong> Share a short, tiktok, or Instagram reel showcasing your remix process or final product and tag us on that respective platform</li>
+          </ul>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+          <h2 style="color: #fff;">Judging Criteria</h2>
+          <p style="color: var(--muted); margin-bottom: 1rem;">Submissions will be evaluated based on:</p>
+          <ul style="color: var(--muted); line-height: 1.8;">
+            <li><strong>Creativity & Originality</strong> - 40%</li>
+            <li><strong>Production Quality</strong> - 40%</li>
+            <li><strong>Musicality & Arrangement</strong> - 20%</li>
+          </ul>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+          <h2 style="color: #fff;">Important Dates</h2>
+          <ul style="color: var(--muted); line-height: 1.8;">
+            <li><strong>Contest Opens:</strong> 1/22/2026</li>
+            <li><strong>Submission Deadline:</strong> 03/01/2026</li>
+            <li><strong>Winners Announced:</strong> TBA</li>
+          </ul>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.02); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+          <h2 style="color: #fff;">Terms & Conditions</h2>
+          <ul style="color: var(--muted); line-height: 1.8; font-size: 0.95rem;">
+            <li>By submitting, you grant CHAOS ERA exclusive rights to use, distribute, and promote your remix</li>
+            <li>Submissions cannot contain unauthorized samples or copyrighted material beyond the provided stems</li>
+            <li>CHAOS ERA reserves the right to disqualify entries that violate these rules</li>
+            <li>Winners will be contacted via email and must respond within 7 days</li>
+          </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem; padding: 2rem;">
+          <a class="btn" href="https://forms.gle/ZcpcPM7YWoZG2THEA" style="font-size: 1.1rem; padding: 1rem 2rem;">Submit Your Remix</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> CHAOS ERA — All rights reserved.</p>
+      <p style="color:var(--muted);font-size:.9rem">Follow: <a href="#" style="color:var(--muted)">Instagram</a> • <a href="#" style="color:var(--muted)">YouTube</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', ()=>{
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+      mobileMenu.style.display = expanded ? 'none' : 'block';
+    });
+
+    // Live Play Counter
+    (function() {
+      const baselineDate = new Date('2026-01-22T00:00:00'); // Date when count was 40,343
+      const baselineCount = 40343;
+      const playsPerDay = 32.5; // Average between 25-40
+      const playsPerMinute = playsPerDay / (24 * 60); // ~0.0226 plays per minute
+
+      function getCurrentCount() {
+        const now = new Date();
+        const minutesElapsed = (now - baselineDate) / (1000 * 60);
+        const additionalPlays = Math.floor(minutesElapsed * playsPerMinute);
+        return baselineCount + additionalPlays;
+      }
+
+      function formatNumber(num) {
+        return num.toLocaleString('en-US');
+      }
+
+      const counterElement = document.getElementById('playCounter');
+      const targetCount = getCurrentCount();
+      let currentCount = 0;
+
+      // Animate from 0 to current count over 2 seconds
+      const animationDuration = 2000; // 2 seconds
+      const fps = 60;
+      const totalFrames = (animationDuration / 1000) * fps;
+      const increment = targetCount / totalFrames;
+      let frame = 0;
+
+      function animateCounter() {
+        if (frame < totalFrames) {
+          currentCount += increment;
+          counterElement.textContent = formatNumber(Math.floor(currentCount));
+          frame++;
+          requestAnimationFrame(animateCounter);
+        } else {
+          currentCount = targetCount;
+          counterElement.textContent = formatNumber(currentCount);
+          // Start the continuous increment
+          startContinuousIncrement();
+        }
+      }
+
+      function startContinuousIncrement() {
+        // Increment by 1 every ~44 minutes (1 play per ~44 minutes = ~32.5 plays/day)
+        const incrementInterval = (24 * 60 * 60 * 1000) / playsPerDay; // milliseconds per play
+
+        setInterval(() => {
+          currentCount++;
+          counterElement.textContent = formatNumber(Math.floor(currentCount));
+        }, incrementInterval);
+      }
+
+      // Start the animation
+      animateCounter();
+    })();
+  </script>
+
+</body>
+</html>
