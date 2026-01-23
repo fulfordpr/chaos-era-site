@@ -312,7 +312,9 @@ section {
 #longSleeve,
 #hoodies,
 #jersey,
-#tshirts {
+#tshirts,
+#accessories,
+#oneoffs {
     padding-top: 40px;
     margin-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -453,8 +455,9 @@ footer {
   .services-grid{
     width: 100%;
     margin: 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.25rem;
     align-items: center;
     justify-content: center;
 
@@ -473,10 +476,16 @@ footer {
     gap: 1rem;
     align-items: flex-start;
   }
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .services img {
-    width: 300px;
+    width: 100px;
     height: auto;
-    margin: 10px;
+    margin: 2px;
   }
 
   /* Make merch nav more compact on mobile */
