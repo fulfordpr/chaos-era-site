@@ -21,6 +21,16 @@
       background-position: center center;
     }
 
+    .epk-hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      z-index: 0;
+    }
+
     .epk-hero .overlay {
       position: absolute;
       inset: 0;
@@ -29,7 +39,7 @@
         rgba(0, 0, 0, 0.2) 0%,
         rgba(11, 11, 13, 1) 97%
       );
-      z-index: 1;
+      z-index: 2;
     }
 
     .epk-bio {
@@ -190,6 +200,7 @@
 
   <!-- Hero -->
   <section class="epk-hero" aria-label="EPK Hero">
+    <img class="epk-hero-img" src="./assets/CHAOS 1.png" alt="">
     <div class="overlay" aria-hidden></div>
   </section>
 

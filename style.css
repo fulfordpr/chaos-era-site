@@ -182,11 +182,11 @@ nav {
   justify-items: center;
   overflow: hidden;
   /* Fallback poster if video is not available */
-  background-image: url('./assets/poster.jpg');
+  background-image: url('./assets/CHAOS%201.png');
   background-size: cover;
   background-position: center center;
 }
-.hero video {
+.hero-bg-img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -195,13 +195,23 @@ nav {
   object-fit: cover;
   z-index: 0;
 }
+.hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center center;
+  object-fit: cover;
+  z-index: 1;
+}
 .hero .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.35) 0%,
-    rgba(11, 11, 13, 1) 97%
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(11, 11, 13, 0.6) 70%,
+    rgba(11, 11, 13, 1) 100%
   );
   z-index: 1;
 }
@@ -289,7 +299,7 @@ section {
     gap: 20px;
     margin-bottom: 35px;
     position: sticky;
-    top: 74px;
+    top: 64px;
     background-color: var(--bg);
     padding: 12px 0px;
     z-index: 100;
