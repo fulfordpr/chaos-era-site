@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CHAOS ERA — EPK</title>
+  <meta name="description" content="CHAOS ERA Electronic Press Kit">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .epk-hero {
+      position: relative;
+      height: 100vh;
+      min-height: 520px;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      overflow: hidden;
+      background-image: url('./assets/CHAOS%201.png');
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .epk-hero .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(11, 11, 13, 1) 97%
+      );
+      z-index: 1;
+    }
+
+    .epk-bio {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .epk-bio h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    .epk-bio p {
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .epk-video {
+      padding: 4rem 2rem 6rem;
+      max-width: 900px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .epk-video h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #000;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .epk-contact {
+      padding: 4rem 2rem 6rem;
+      max-width: 800px;
+      margin: 0 auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+    }
+
+    .epk-contact h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 1rem;
+    }
+
+    .epk-contact p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .epk-contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .epk-contact a:hover {
+      text-decoration: underline;
+    }
+
+    .epk-live {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 2rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .epk-live h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .epk-live p {
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.1rem);
+      line-height: 1.8;
+    }
+
+    .epk-stage {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .epk-stage img {
+      width: 100%;
+      display: block;
+    }
+
+    .epk-stage .stage-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(11, 11, 13, 0.6) 0%,
+        rgba(11, 11, 13, 0) 30%,
+        rgba(11, 11, 13, 0) 70%,
+        rgba(11, 11, 13, 0.8) 100%
+      );
+    }
+
+    @media (max-width: 800px) {
+      .epk-bio,
+      .epk-video,
+      .epk-contact,
+      .epk-live {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden><img src="./assets/3bp.png" alt=""></div>
+      <div>
+        <div style="font-weight:700">CHAOS ERA</div>
+        <div style="font-size:12px;color:var(--muted)">Metalcore</div>
+      </div>
+    </div>
+    <nav aria-label="Main Navigation">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/#music">Music</a>
+      <a class="nav-link" href="/#merch">Merch</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+  </header>
+
+  <div id="mobileMenu" role="dialog" aria-modal="false" style="display:none;position:fixed;right:1rem;top:102px;background:rgba(0,0,0,0.8);padding:1rem;border-radius:8px;z-index:80">
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/#music">Music</a>
+    <a class="nav-link" href="/#merch">Merch</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="epk-hero" aria-label="EPK Hero">
+    <div class="overlay" aria-hidden></div>
+  </section>
+
+  <main>
+
+    <!-- Bio -->
+    <section class="epk-bio">
+      <h2>Welcome to the CHAOS ERA</h2>
+      <p>
+        CHAOS ERA is a moden metalcore band formed in the midwest. The band has built a reputation for punishing live performances and a sound that fuses crushing breakdowns with catchy choruses. High production value and professionalism are at the core of their ethos, setting them apart in a genre often defined by its rawness.
+      </p>
+      <p>
+        Drawing influence from the all corners of modern metal, CHAOS ERA delivers your soundtrack to the end of the world. A mixtape of aggressive guitars, dynamic vocals, and relentless energy, their music is a cathartic release for fans of heavy music.
+      </p>
+      <p>
+        Their Best single <em>Concrete</em> set the tone for the band's direction: thick production, visceral lyricism, and a refusal to compromise. With a full alum release coming summer 2026, CHAOS ERA is just getting started.
+      </p>
+    </section>
+
+    <!-- Music Video -->
+    <section class="epk-video">
+      <h2>Music Video</h2>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/9_pElhNVMBw"
+          title="CHAOS ERA — Concrete (Official Music Video)"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Live Setup Text -->
+    <section class="epk-live">
+      <h2>Live Setup</h2>
+      <p>
+        CHAOS ERA performs as a five-piece with a full live production setup. The band travels with its own IEM system, and stage plot designed to scale from club stages to festival mains. 
+      </p>
+    </section>
+
+    <!-- Stage Image -->
+    <div class="epk-stage" aria-hidden="true">
+      <img src="./assets/stage.png" alt="CHAOS ERA live stage setup">
+      <div class="stage-overlay"></div>
+    </div>
+
+    <!-- Contact -->
+    <section class="epk-contact">
+      <h2>Contact</h2>
+      <p>
+        For booking, press, and media inquiries, reach out on <a href="https://www.instagram.com/chaoseraband/" target="_blank" rel="noopener noreferrer">Instagram</a><br>
+        OR email us at <br>
+        <a href="mailto:chaos3ra@gmail.com">chaos3ra@gmail.com</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CHAOS ERA. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+      const open = menu.style.display === 'block';
+      menu.style.display = open ? 'none' : 'block';
+      toggle.setAttribute('aria-expanded', String(!open));
+    });
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        menu.style.display = 'none';
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
