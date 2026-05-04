@@ -16,6 +16,8 @@ img {
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* Prevent horizontal scrolling when elements slightly overflow */
 body{
@@ -175,6 +177,7 @@ nav {
 
 .hero {
   position: relative;
+  padding: 0;
   height: 100vh;
   min-height: 520px;
   display: grid;
